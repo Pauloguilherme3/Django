@@ -25,4 +25,28 @@ function exibirTipo(num) {
     for (let i = 0;i <= num; i++)
             console.log(i % 2 === 0 ? i + '"PAR"': i + '"IMPAR"');
 }
-exibirTipo(5)
+function exibirPropriedades(objetos){
+    for (obj in objetos){
+        if(typeof objetos[obj] === 'string')
+            console.log(obj ,'=', objetos[obj]);
+    }
+}
+// somar multiplos de 3 e 5
+function somar(limite){
+    const multiplos3 = 3;
+    const multiplos5 = 5;
+    let soma = 0;
+    for(let i = 0; i <= limite; i++){
+        soma += i % multiplos3 === 0 ? + i: i % multiplos5 === 0 ? + i:0;
+    }
+    console.log(soma)
+}
+const filme = {
+    titulo: "Vingadores",
+    ano: 1994,
+    personagem: "Thor",
+    qualidade: "Boa",
+};
+
+somar(10)
+//exibirPropriedades(filme)
