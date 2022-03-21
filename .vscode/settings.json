@@ -1,3 +1,5 @@
 {
-    "liveServer.settings.multiRootWorkspaceName": "Django"
+    "liveServer.settings.multiRootWorkspaceName": "Django",
+    "python.linting.pylintEnabled": true,
+    "python.linting.enabled": true
 }
